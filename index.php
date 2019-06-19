@@ -1,28 +1,3 @@
-<?
-session_start();
-
-include("../board_func.php");
-include("../classdb.php");
-include("./sess_admin.php");
-
-
-//$mode = $id;
-
-$id = $_GET["id"];
-$cpage = $_GET["cpage"];
-$no = $_GET["no"];
-$method = $_GET["method"];
-$word = $_GET["word"];
-//$id="free";
-$return_url = $PHP_SELF;
-
-
-
-$obj1 = new db;
-
-include("../board/new_board_config.inc");
-
-?>
 <html>
 <head>
 <title>������(<?=$nm?>) �Խ����Դϴ�.-</title>
